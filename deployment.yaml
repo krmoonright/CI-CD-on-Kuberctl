@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: mynginx
+  name: ingress-nginx
 spec:
-  replicas: 1
+  replicas: 2
   selector:
     matchLabels:
-      run: mynginx
+      run: ingress-nginx
   template:
     metadata:
       labels:
-        run: mynginx
+        run: ingress-nginx
     spec:
       containers:
       - image: nginx
-        name: mynginx
+        name: ingress-nginx
         ports:
         - containerPort: 80
