@@ -32,7 +32,7 @@ spec:
    
       containers:
    
-      - image: krmoonright/dockerimg:0.0.1
+      - image: gcr.io/google-samples/node-hello:1.0
    
         name: hello-world
    
